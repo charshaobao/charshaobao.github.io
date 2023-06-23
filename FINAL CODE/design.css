@@ -1,0 +1,371 @@
+/* css tips */
+/* 
+
+parent > immediatechild {}
+parent anydescendant {}
+element + nextsibling {}
+element ~ allfollowingsiblings {}
+parent:has(child:hover) otherchild {}
+
+*/
+
+/* default styles */
+body {
+    font-family: 'Montserrat', 'Judson';
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 1000px;
+}
+a, a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+input[type=submit]:hover, button {
+    cursor: pointer;
+}
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+h1, .h1 {
+    font-weight: 700;
+    font-size: 48px;
+    font-family: 'Judson';
+}
+h2, .h2 {
+    font-weight: 700;
+    font-size: 36px;
+    font-family: 'Judson';
+}
+h3, .h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+h4, .h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+h5, .h5 {
+    font-weight: 400;
+    font-size: 18px;
+}
+h6, .h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+button {
+    border: none;
+    padding: 10px 15px;
+}
+/* template colors */
+.templatecolors {
+    color: #000000;
+    color: #d9d9d9;
+    color: #ffffff;
+    color: #F2C3A7;
+    color: #F9E9DA;
+    color: #B9CEC5;
+    color: #F8A353;
+    color: #393D0A;
+}
+/* header */
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+    #topbar {
+        display: grid;
+        grid-template-columns: max-content 1fr max-content max-content max-content 200px;
+        background-color: #ffffff;
+        height: 100px;
+        align-items: center;
+        justify-items: center;
+        column-gap: 10px;
+    }
+        #headertitle {
+            display: flex;
+            align-items: center;
+            font-family: 'Judson';
+            font-size: 36px;
+            margin: 0 40px;
+        }
+            #logo {
+                width: 80px;
+                height: 80px;
+                object-fit: contain;
+            }
+        
+        #search {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+        #search:hover input, #search input:focus, #topbar:has(#search+.icon:hover) #search input {
+            transition: opacity 0.2s ease;
+            opacity: 1;
+        }
+            .icon {
+                width: 100%;
+                height: 100%;
+                padding: 0 10px;
+                border: none;
+                background-color: transparent;
+            }
+            .icon img {
+                width: 30px;
+                height: 30px;
+            }
+            #search input {
+                transform-origin: right;
+                border-radius: 50px;
+                transition: opacity 0.3s ease;
+                width: -webkit-fill-available;
+                opacity: 0;
+                padding: 10px;
+                border: #d9d9d9 1px solid;
+            }
+        #topbar .button1 {
+            width: 150px;
+            height: 65px;
+            padding: 10px;
+        }
+    
+    #navbar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 30px;
+        padding: 0 10%;
+        background-color: #F2C3A7;
+        transition: height 0.2s ease;
+    }
+    #navbar:hover {
+        height: 70px;
+        transition: height 0.2s ease;
+    }
+        #navbar a, #navbar .dropdown .dropbtn {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 16px !important;
+            height: 30px;
+            padding: 0 20px;
+            text-align: center;
+            line-height: 30px;
+            white-space: nowrap;
+        }
+        #navbar:hover a, #navbar:hover .dropdown .dropbtn {
+            height: 70px;
+            line-height: 70px;
+        }
+        #navbar a:hover, #navbar .dropbtn:hover {
+            color: #393D0A;
+            transition: color 0.2s ease;
+        }
+          
+          .dropdown .dropbtn {
+            border: none;
+            outline: none;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #F2C3A7;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+
+/* content */
+.button1 {
+    background-color: #F8A353;
+    color: #ffffff;
+}
+.button1:hover {
+    background-color: #F8A353CC;
+}
+.button2 {
+    background-color: #B9CEC5;
+    color: #ffffff;
+}
+.button2:hover {
+    background-color: #B9CEC5CC;
+}
+.button3 {
+    border: #393D0A 1px solid;
+    background-color: #ffffff;
+    color: #393D0A;
+}
+.button3:hover {
+    background-color: #393D0A;
+    color: #ffffff;
+}
+.button4 {
+    background-color: #F8A353;
+    color: #000000;
+}
+.button4:hover {
+    background-color: #F8A353CC;
+}
+.button5 {
+    background-color: #393D0A;
+    color: #ffffff;
+    width: max-content;
+    margin: auto;
+}
+.button5:hover {
+    background-color: #393D0ACC;
+}
+.button6 {
+    background-color: #9d7566;
+    color: #ffffff;
+    width: max-content;
+    margin: auto;
+}
+.button6:hover {
+    background-color: #9d7566CC;
+}
+
+
+
+/* footer */
+footer {
+    display: grid;
+    grid-template: "useful menu services newsletter" max-content
+    "useful menu services connect" 42px
+    "useful menu services icons" max-content
+    "copy copy copy copy" 100px / 2fr 1fr 1fr 2fr;
+    padding: 40px 5% 0;
+    background-color: #F9E9DA;
+}
+    #usefullinks {
+        grid-area: useful;
+        display: flex;
+        flex-direction: column;
+    }
+    #usefullinks .button1 {
+        width: max-content;
+    }
+    #footermenu {
+        grid-area: menu;
+        display: flex;
+        flex-direction: column;
+    }
+    #footerservices {
+        grid-area: services;
+        display: flex;
+        flex-direction: column;
+    }
+    #footernews {
+        grid-area: newsletter;
+        display: flex;
+        flex-direction: column;
+    }
+        #footernews p {
+            margin: 0 0 10px;
+        }
+        #footernews form {
+            display: flex;
+        }
+            #footernews input {
+                width: -webkit-fill-available;
+                padding: 10px;
+                border: #d9d9d9 1px solid;
+            }
+    #footerconnect {
+        grid-area: connect;
+        height: max-content;
+    }
+    #connecticons {
+        grid-area: icons;
+        display: flex;
+    }
+        #connecticons img {
+            height: 20px;
+            width: fit-content;
+            margin-right: 10px;
+            filter: invert(86%) sepia(39%) saturate(3773%) hue-rotate(322deg) brightness(104%) contrast(94%);
+            cursor: pointer;
+        }
+    footer>p {
+        grid-area: copy;
+        display: block;
+        margin: auto;
+        line-height: 100px;
+    }
+    footer h5 {
+        margin-bottom: 20px;
+    }
+    footer a, footer p {
+        margin-bottom: 10px;
+        font-size: 16px !important;
+    }
+#backtotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background: #ffffff;
+    overflow: hidden;
+    z-index: 10;
+}
+    #backtotop img {
+        filter: invert(19%) sepia(10%) saturate(3919%) hue-rotate(27deg) brightness(100%) contrast(92%);
+        border-radius: 25px;
+    }
+
+#contactus {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 40px 0 0 40px;
+    padding: 10px 0;
+    background-color: rgb(225, 116, 116);
+    filter: invert(1);
+    position: fixed;
+    bottom: 60px;
+    right: 0;
+    z-index: 10;
+}
+    #contactus img {
+        width: min-content;
+        height: 100%;
+    }

@@ -1,0 +1,114 @@
+/* template colors */
+.templatecolors {
+    color: #000000;
+    color: #d9d9d9;
+    color: #ffffff;
+    color: #F2C3A7;
+    color: #F9E9DA;
+    color: #B9CEC5;
+    color: #F8A353;
+    color: #393D0A;
+}
+
+/* actual css */
+#banner {
+    background: url(assets/team1.png) center / cover scroll no-repeat;
+}
+    #banner div {
+        background-color: #00000059;
+        padding: 320px 0;
+        color: #ffffff;
+        text-align: center;
+    }
+
+#team {
+    min-height: 750px;
+    height: calc(400px + 30vw);
+    max-height: 900px;
+    position: relative;
+}
+#team img {
+    object-fit: cover;
+}
+    #sect1 {
+        position: absolute;
+        top: 140px;
+        left: 90px;
+        background-color: #F2C3A7;
+        color: #ffffff;
+        padding: 40px 45px;
+    }
+    #sect2 {
+        position: absolute;
+        top: 320px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 140px;
+    }
+        .portrait {
+            width: 20%;
+            max-width: 300px;
+            max-height: 500px;
+            margin-left: 40px;
+            position: relative;
+        }
+            .desc {
+                position: absolute;
+                width: 90%;
+                min-height: 150px;
+                bottom: calc(-250px + 50%);
+                background-color: #d9d9d9;
+                padding: 20px;
+            }
+#director {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+    #title {
+        margin: 40px 10%;
+        width: -webkit-fill-available;
+        background-color: #F2C3A7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        height: 100px;
+    }
+    #details {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: max-content 1fr 1fr;
+    }
+        .sect1 {
+            grid-area: 1/1/span 2/1;
+            position: relative;
+            width: 520px;
+            max-width: 30vw;
+            min-width: 300px;
+        }
+            .sect1 div {
+                position: sticky;
+                top: 130px;
+                height: 87vh;
+            }
+            .sect1 h2 {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: #00000059;
+                color: #ffffff;
+                padding: 20px;
+                text-align: center;
+            }
+            .sect1 img {
+                object-fit: cover;
+            }
+        .desc1 {
+            background-color: #F9E9DA;
+        }
+        .desc1, .desc2 {
+            padding: 50px 30px;
+            text-align: center;
+        }

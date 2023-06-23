@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Beyoutiful</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="assets/placeholder.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Judson:400,600,700,800' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="treatment.css">
+</head>
+<body>
+    <!-- this is the top header -->
+    <header>
+        <div id="topbar">
+            <a href="home.html" id="headertitle"><img src="assets/logo.png" id="logo">eYoutiful</a>
+            <form id="search" action="#">
+                <input type="text" placeholder="What are you looking for?" required>
+            </form>
+            <button type="submit" class="icon" form="search"><img src="assets/searchicon.png" alt=""></button>
+            <button class="icon" onclick="location.href='profile.html'"><img src="assets/accounticon.png" alt=""></button>
+            <button class="icon"><img src="assets/carticon.png" alt=""></button>
+            <button class="button1 h4" onclick="location.href='contactus.html'">Book Now</button>
+        </div>
+        <!-- this is the top navbar -->
+        <div id="navbar">
+            <a href="home.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="location.href='aboutbrand.html'">About 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="aboutbrand.html">Our Brand</a>
+                  <a href="aboutteam.html">Our Team</a>
+                </div>
+              </div>
+            <a href="treatment.html">Treatment</a>
+            <a href="shop.html">Shop</a>
+            <a href="membership.html">Membership</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </header>
+    <!-- this is the fixed elements -->
+    <a href="#top" id="backtotop"><img src="assets/arrowup.webp"></a>
+    <a href="contactus.html" id="contactus"><img src="assets/whatsapp.svg" alt="" onclick="location.href='contactus.html'">Contact Us</a>
+
+    <!-- this is the banner -->
+    <div id="mainbanner">
+        <img src="assets/treatmentbanner.png">
+            <div class="fontcol">  
+            <h1 >What concern would you like to resolve today? </h1><br>
+            <h3>Take a step towards your beauty goals with BeYoutiful.</h3>
+            <button class="button2">BOOK YOUR APPOINTMENT</button>
+        </div>
+    </div>
+
+    <!-- alltreatments -->
+<div id="body">
+    <h1>Our Treatments</h1><br>
+    <a href="#facesection">Face</a> |
+    <a href="#bodysection">Body</a><br>
+    <!--face section-->
+    <div class="section" id="facesection">
+        <h1>F A C E</h1>
+    </div>
+    <div id="shop">        
+        <div class="card1">
+            <img src="assets/profhilo.png" alt="profhilo">
+            <div class="treatmenttype" style="color:#F9E9DA;">
+                <div class="button">BEST SELLER</div>
+                <h1>Profhilo</h1>
+                <h6>FACE / NECK / BODY <br>
+                    AGING / DULLNESS / HYDRATION / SCARS / STRETCH MARKS / TIGHTENING</h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/profhilo2.png" alt="profhilo">
+                    <div class="treatmentinfo">
+                        <h1>Profhilo</h1><br>
+                        <h6>Nourishes skin cells and boosts skin’s collagen production by 12 times by providing intense hydration from the inside out. </h6>
+                        <button onclick="document.location='profhilo.html'">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="card1">
+            <img src="assets/rejuran.png" alt="rejuran healer">
+            <div class="treatmenttype">
+                <h1>Rejuran Healer</h1>
+                <h6>FACE  <br>
+                    AGING / DULLNESS / REDNESS / PIGMENT / PORES / WRINKLES</h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/rejuran2.png" alt="rejuran2">
+                    <div class="treatmentinfo">
+                        <h1>Rejuran Healer</h1><br>
+                        <h6>The “Baby Skin Booster” for ageing or damanged skin. Achieve instant radiance, reduced redness and a younger-looking glow.</h6>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="assets/hifu.png" alt="hifu">
+            <div class="treatmenttype">
+                <h1>HIFU</h1>
+                <h6>FACE / NECK<br>
+                    AGING / WRINKLES  / TIGHTENING</h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/hifu2.png" alt="hifu2">
+                    <div class="treatmentinfo">
+                        <h1>HIFU</h1><br>
+                        <h6>Lift and tighten saggy skin with no downtime. Reverse ageing and achieve youthful look with ultrasound technology.</h6>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="shop">        
+        <div class="card1">
+            <img src="assets/botox.png" alt="botox">
+            <div class="treatmenttype">
+                <h1>Botox</h1>
+                <h6>FACE / EYES / NECK <br>
+                    AGING / CONTOURS / PORES / SLIM / WRINKLES</h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/botox2.png" alt="botox2">
+                    <div class="treatmentinfo">
+                        <h1>Botox</h1><br>
+                        <h6>By injecting neurotoxins into the targeted facial muscles, Botox helps to reduce dynamic wrinkles and fine lines. Also used for face and jaw slimming.</h6>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="assets/fillers.png" alt="fillers">
+            <div class="treatmenttype" style="color:#F9E9DA;">
+                <h1>Filler</h1>
+                <h6>FACE / EYES / LIPS<br>
+                    AGING / CONTOURS / DARK CIRCLES / WRINKLES</h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/fillers2.png" alt="filler2">
+                    <div class="treatmentinfo">
+                        <h1>Fillers</h1><br>
+                        <h6>Restores volume loss, improves skin elasticity and reduces static wrinkles to your former youthful appearance.</h6>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="assets/pico.png" alt="pico laser">
+            <div class="treatmenttype">
+                <h1>Pico Laser</h1>
+                <h6>FACE <br>
+                    ACNE / DULLNESS / PIGMENT / PORES / SCARS / WRINKLES</h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/pico2.png" alt="pico2">
+                    <div class="treatmentinfo">
+                        <h1>Pico Laser</h1><br>
+                        <h6>Non-invasive laser treatment for crystal clear skin. Brighten dull skin, minimise large pores, remove skin pigmentation and acne scars.</h6>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Body section-->
+    <div class="section" id="bodysection">
+        <h1>B O D Y</h1>
+    </div>
+    <div id="shop">        
+        <div class="card1">
+            <img src="assets/tightening.png" alt="tightening">
+            <div class="treatmenttype">
+                <div class="button" style="color: #393D0A ; border: 2px solid #393D0A;">BEST SELLER</div>
+                <h1>Skin Tightening</h1>
+                <h6>BODY  <br>
+                    CELLULITE / CONTOURS / SLIM / TIGHTENING<h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/tightening2.png" alt="tightening2">
+                    <div class="treatmentinfo">
+                        <h1>Skin Tightening</h1><br>
+                        <h6>Reduce fat and tighten loose skin around visible bulges in your abdomen, thighs or hips with Venus Legacy Body.</h6>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="card1">
+            <img src="assets/neck.png" alt="neck">
+            <div class="treatmenttype" style="color: #F9E9DA;">
+                <h1>Neck Rejuvenation</h1>
+                <h6>FACE / NECK<br>
+                    AGING / WRINKLES  / TIGHTENING</h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/neck2.png" alt="neck2">
+                    <div class="treatmentinfo">
+                        <h1>Neck Rejuvenation</h1><br>
+                        <h6>Redefine graceful aging with this non-surgical lift for saggy double chins and lined necks.</h6>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="assets/stretchmark.png" alt="stretchmark">
+            <div class="treatmenttype">
+                <h1>Stretch Mark Repair</h1>
+                <h6>BODY <br>
+                    SCARS / STRETCH MARKS / TIGHTENING</h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/stretchmark2.png" alt="stretchmark2">
+                    <div class="treatmentinfo">
+                        <h1 style="line-height: 40px;" >Stretch<br>Mark<br>Repair</h1><br>
+                        <h6>Fractional Laser delivers pulses of energy into skin, triggering cells to create new collagen, blending in the treated stretch marks over time.</h6>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="shop">        
+        <div class="card1">
+            <img src="assets/fatfreeze.png" alt="fatfreeze">
+            <div class="treatmenttype">
+                <h1>Fat Freezing</h1>
+                <h6>BODY<br>
+                    CONTOURS / SLIM</h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/fatfreeze2.png" alt="fatfreeze2">
+                    <div class="treatmentinfo">
+                        <h1 style="line-height: 40px;">Fat Freezing</h1><br>
+                        <h6>CoolSculpting can eliminate areas of stubborn fats that are resistant to diet and exercise and give the body a more contoured silhouette.</h6>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="assets/underarm.png" alt="underarm">
+            <div class="treatmenttype">
+                <h1>Underarm Whitening</h1>
+                <h6>BODY<br>
+                    DULLNESS</h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/underarm2.png" alt="underarm2">
+                    <div class="treatmentinfo">
+                        <h1 style="line-height: 40px;">Underarm Whitening</h1><br>
+                        <h6>Underarm Whitening is ideal for people troubled by dark pigmentation, uneven skin tone or discoloration at their underarms.</h6>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="assets/cellulite.png" alt="cellulite">
+            <div class="treatmenttype">
+                <div class="button" style="color: #393D0A ; border: 2px solid #393D0A;">NEW</div>
+                <h1>Cellulite Treatment</h1>
+                <h6>BODY <br>
+                    CELLULITE</h6>
+            </div>
+            <div class="card1">
+                <div class="transition">
+                    <img src="assets/cellulite2.png" alt="cellulite2">
+                    <div class="treatmentinfo">
+                        <h1 style="line-height: 40px;">Cellulite Treatment</h1><br>
+                        <h6>Using high energy to stimulate collagen production, improve blood circulation and break down subcutaneous fat. See a reduction in cellulite and firmer, smoother skin.</h6>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+  <!-- shop -->
+  <div id="shop2">
+    <h1>Shop Our Featured Products</h1>
+    <section id="product1" class="section-p1">
+            <div class="pro-container">
+                <!-- 1st Product -->
+                <div class="pro" onclick="window.location.href='product1.html';">
+                    <img src="assets/AntiAging Moisteriser.png" alt="f1">
+                    <div class="des">
+                        <span>Skin</span>
+                        <h5>ACM Anti-Aging Moisturizers</h5>
+                        <!-- Price -->
+                        <h4>$64.20</h4>
+                        <!-- Add to Cart Button-->
+                        <!-- <div class="cart cartButton "> -->
+                        <a href="#">
+                            <div class="cart">
+                                <div class="cartButton">
+                                    <img src="assets/best-seller.png" style="text-align: center;">
+                                    <img src="assets/cart_icon.png" style="text-align: center;">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2nd Product -->
+                <div class="pro" onclick="window.location.href='product2.html';">
+                    <img src="assets/AknicareCleanser.png" alt="f2">
+                    <div class="des">
+                        <span>Skin</span>
+                        <h5>Aknicare Cleanser</h5>
+                        <!-- Price -->
+                        <h4><s>$85.60</s></h4>
+                        <h4 style="color: red;">$73.40</h4>
+                        <!-- Add to Cart Button-->
+                        <a href="#">
+                            <div class="cart">
+                                <div class="cartButton">
+                                    <img src="assets/best-seller.png" style="text-align: center;">
+                                    <img src="assets/cart_icon.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3rd Product -->
+                <div class="pro" onclick="window.location.href='product3.html';">
+                    <img src="assets/C E Ferulic.png" alt="f3">
+                    <div class="des">
+                        <span>Skin</span>
+                        <h5>C E Ferulic</h5>
+                        <!-- Price -->
+                        <h4>$265.36</h4>
+                        <!-- Add to Cart Button-->
+                        <!-- <div class="cart cartButton "> -->
+                        <a href="#">
+                            <div class="cart">
+                                <div class="cartButton">
+                                    <img src="assets/best-seller.png" style="text-align: center;">
+                                    <img src="assets/cart_icon.png">
+                                </div>
+                            </div>
+                        </a>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
+    <!-- this is the footer -->
+    <footer>
+        <div id="usefullinks">
+            <h5>Useful Links</h5>
+            <a href="pdpa.html">Privacy Policy</a>
+            <a href="">Terms of Use</a>
+            <a href="">Return and Refunds</a>
+            <a href="">Track Your Order</a>
+            <br>
+            <button class="button1" onclick="location.href='contactus.html'">BOOK AN APPOINTMENT</button>
+        </div>
+        <div id="footermenu">
+            <h5>Menu</h5>
+            <a href="home.html">Home</a>
+            <a href="aboutbrand.html">About</a>
+            <a href="treatment.html">Treatment</a>
+            <a href="shop.html">Shop</a>
+            <a href="membership.html">Membership</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+        <div id="footerservices">
+            <h5>Services</h5>
+            <a href="treatment.html#facesection">Face</a>
+            <a href="treatment.html#bodysection">Body</a>
+        </div>
+        <div id="footernews">
+            <h5>Newletter Sign Up</h5>
+            <p>Sign up for news and special offers</p>
+            <form>
+                <input type="text" placeholder="Enter Email Address">
+                <button type="submit" class="button1">SUBSCRIBE</button>
+            </form>
+        </div>
+        <div id="footerconnect">
+            <h5>Stay Connected</h5>
+        </div>
+        <div id="connecticons">
+            <img src="assets/facebook.png" alt="">
+            <img src="assets/whatsapp.png" alt="">
+            <img src="assets/dribbble.png" alt="">
+            <img src="assets/snapchat.png" alt="">
+            <img src="assets/tiktok.png" alt="">
+            <img src="assets/twitter.png" alt="">
+            <img src="assets/linkedin.png" alt="">
+            <img src="assets/instagram.png" alt="">
+        </div>
+        <p style="font-size: x-small;">Copyright &copy; 2022 BeYoutiful Pte. Ltd. All Rights Reserved.</p>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

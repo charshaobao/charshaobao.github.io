@@ -1,0 +1,422 @@
+.templatecolors {
+    color: #000000;
+    color: #d9d9d9;
+    color: #ffffff;
+    color: #F2C3A7;
+    color: #F9E9DA;
+    color: #B9CEC5;
+    color: #F8A353;
+    color: #393D0A;
+}
+html {
+    scroll-behavior: smooth;
+}
+#mainbanner {
+    position: relative; 
+    text-align: center;
+    width: 100%;
+}
+        #mainbanner .fontcol {
+            color: #393D0A;
+            width: 40%;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #mainbanner img {
+            width: 100%;
+        }
+
+#body1 {
+    height: 600px;
+    width: 100%;
+    background-color:#F9E9DA;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+    #body1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-area: 1/2;
+    }
+
+    #body1 .content {
+        text-align: left;
+        margin: 100px;
+        color: #000000;
+        padding: 0 20px;
+    }
+   
+    #body1 .content img{
+        height: auto;
+        width: 300px;
+        padding-bottom: 40px;
+    }
+    #body1 .content .button{
+        width: 300px;
+        border-radius: 40px;
+        height: auto;
+        border:2px solid #B9CEC5;
+        color:#B9CEC5;
+        background-color: white;
+        text-align: center;
+        font-weight: 600;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+#body2 {
+    height: 400px;
+    width: 100%;
+    background-color:#ffffff;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: max-content max-content;
+    gap: 20px;
+    text-align: center;
+    padding: 40px;
+}
+#body2 h1 {
+    grid-area: 1/1/1/span 5;
+    color: #393D0A;
+}
+
+#body3 {
+    text-align: center;
+    height:auto;
+    width: 100%;
+    background-color:#ffffff;
+    text-align: center;
+    padding: 80px 80px;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 10px;
+}
+#body3 iframe{
+   float: left;
+}
+#body3 h1 {
+    grid-area: 1/1/1/span 2;
+    color: #393D0A;
+}
+#body3 div {
+    text-align: center;
+    padding: 20px 40px;
+}
+
+#body4 {
+    text-align: center;
+    height:auto;
+    width: 100%;
+    background-color:#F9E9DA;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+#body4 div {
+    text-align: center;
+    padding: 20px 40px;
+}
+#body4 h6 {
+  padding-right: 40px;
+}
+
+
+/*faq dropdown accordion */
+.container {
+    margin: 0 auto;
+    padding: 50px;
+    width: 60rem;
+  }
+.container h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.accordion {
+    border: 1px solid #F2C3A7;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  
+  .accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #03b5d2;
+  }
+  
+  .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  .accordion button:hover,
+  .accordion button:focus {
+    cursor: pointer;
+    color: #F8A353CC;
+  }
+  
+  .accordion button:hover::after,
+  .accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+  }
+  
+  .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  
+  .accordion button[aria-expanded='true'] {
+    color:#F2C3A7;
+  }
+  .accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+  }
+  .accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+  }
+
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section-book {
+    height: auto;
+    background-image: url(assets/clinic.jpg);
+    padding: 50px;
+    /* background-image: linear-gradient(to right bottom, #66a5ad, #c4dfe6); */
+  }
+  
+  .book {
+    width: 85%;
+    height: 100%;
+    background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 100%,
+      transparent 50%
+    ),
+
+      url(assets/consultation.webp);
+  
+      /* url("https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); */
+    background-size: 50%;
+    background-position: 65% 55%;
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .book__form {
+    width: auto;
+    padding: 50px;
+    height: fit-content;
+  }
+  .book__form h1{
+    padding-bottom: 30px;
+  }
+  
+  .form__group {
+    margin-bottom: 2rem;
+    
+  }
+  .form__group:nth-child(3) {
+    margin-bottom: 5rem;
+  }
+  
+  .form__input {
+    font-size: 16px;
+    font-family: inherit;
+    color: inherit;
+    padding: 10px ;
+    border-radius: 2px;
+    background-color: #fff4ea;
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 85%;
+    display: block;
+    transition: all 0.3s;
+    margin-left: 20px;
+  }
+  
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #393D0A;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #db3030;
+  }
+  
+  .form__input::-webkit-input-placeholder {
+    color: grey;
+  }
+  
+  .form__label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+  
+  .form__radio-group {
+    width: 30%; 
+    display: inline-block;
+  }
+  
+  .form__radio-input {
+    display: none;
+  }
+  
+  .form__radio-label {
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+  
+  .form__radio-button {
+    height: 20px;
+    width: 20px;
+    border: 5px solid  #B9CEC5;
+    border-radius: 50% ;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 20px;
+  }
+  
+  .form__radio-button::after {
+    content: "";
+    display: block;
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#B9CEC5;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+    opacity: 1;
+  }
+  
+  .btn,
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #B9CEC5;
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active,
+  .btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .bookappointment {
+      border-collapse:separate;
+      border-spacing:0 5px;
+      font-size: medium;
+      
+  }

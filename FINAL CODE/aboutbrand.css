@@ -1,0 +1,76 @@
+/* template colors */
+.templatecolors {
+    color: #000000;
+    color: #d9d9d9;
+    color: #ffffff;
+    color: #F2C3A7;
+    color: #F9E9DA;
+    color: #B9CEC5;
+    color: #F8A353;
+    color: #393D0A;
+}
+
+/* actual css */
+#banner {
+    background: url(assets/story1.png) right center / cover scroll no-repeat;
+}
+    #banner div {
+        background-color: #00000059;
+        padding: 320px 175px;
+        color: #ffffff;
+    }
+
+#story {
+    display: grid;
+    grid-template-areas: "one two"
+                         "one three"
+                         "four empty"
+                         "five five";
+    grid-template-rows: 400px 400px 800px 800px;
+    grid-template-columns: 1fr 1fr;
+}
+#sect2, #sect3, #sect4, #sect5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+}
+#sect1 {
+    grid-area: one;
+    background: url(assets/beginning.webp) bottom center / cover scroll no-repeat;
+    background-size: auto 110%;
+}
+#sect1 div {
+    /* background-color: #00000059; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    backdrop-filter: grayscale(0.5) contrast(0.4) brightness(1.3);
+}
+#sect2 {
+    grid-area: two;
+    background-color: #B9CEC5;
+}
+#sect3 {
+    grid-area: three;
+    background-color: #F9E9DA;
+}
+#sect4 {
+    grid-area: four;
+    background-color: hsl(15, 21%, 65%);
+    color: #ffffff;
+}
+#sect5 {
+    grid-area: five;
+}
+#empty {
+    grid-area: empty;
+    background: url(assets/now.jpg) center / cover scroll no-repeat;
+    filter: grayscale(0.5) contrast(0.4) brightness(1.3);
+}

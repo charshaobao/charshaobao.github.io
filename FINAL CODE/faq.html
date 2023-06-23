@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Beyoutiful</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="assets/placeholder.jpg">
+<link href='https://fonts.googleapis.com/css?family=Judson:400,600,700,800' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <!-- this is the top header -->
+    <header>
+      <div id="topbar">
+          <a href="home.html" id="headertitle"><img src="assets/logo.png" id="logo">eYoutiful</a>
+          <form id="search" action="#">
+              <input type="text" placeholder="What are you looking for?" required>
+          </form>
+          <button type="submit" class="icon" form="search"><img src="assets/searchicon.png" alt=""></button>
+          <button class="icon" onclick="location.href='profile.html'"><img src="assets/accounticon.png" alt=""></button>
+          <button class="icon"><img src="assets/carticon.png" alt=""></button>
+          <button class="button1 h4" onclick="location.href='contactus.html'">Book Now</button>
+      </div>
+      <!-- this is the top navbar -->
+      <div id="navbar">
+          <a href="home.html">Home</a>
+          <div class="dropdown">
+              <button class="dropbtn" onclick="location.href='aboutbrand.html'">About 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="aboutbrand.html">Our Brand</a>
+                <a href="aboutteam.html">Our Team</a>
+              </div>
+            </div>
+          <a href="treatment.html">Treatment</a>
+          <a href="shop.html">Shop</a>
+          <a href="membership.html">Membership</a>
+          <a href="faq.html">FAQ</a>
+          <a href="blog.html">Blog</a>
+          <a href="contactus.html">Contact Us</a>
+      </div>
+  </header>
+  <!-- this is the fixed elements -->
+  <a href="#top" id="backtotop"><img src="assets/arrowup.webp"></a>
+  <a href="contactus.html" id="contactus"><img src="assets/whatsapp.svg" alt="" onclick="location.href='contactus.html'">Contact Us</a>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class = "text">
+          <h1>Frequently Asked Questions</h1>
+        </div>  
+    </div>
+
+    <br>
+    <br>
+
+    <!--FAQ drop down section-->
+    <!--General-->
+    <div class="container">
+        <h2>General</h2>
+        <div class="accordion">
+
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">How do I make an appointment?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                  You may leave your interest down <a href = "contactus.html"><u>here</u></a> and we will respond to your enquries within 3-5 business days. 
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title">Is there a minimum age requirement for your treatments?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                  The minimum age is 21. 
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title">What is your cancellation policy?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                You may cancel the session through the personal Whatsapp line that will be set up with you. Do update us at least 24 hours in advance. 
+              </p>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+
+
+    <!--Promotions-->
+    <div class="container">
+        <h2>Promotions</h2>
+        <div class="accordion">
+
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">Can I combine vouchers and promotions?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                No. Vouchers and promotions are strictly to be used on separate visits. 
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title">Can I get a discount if I refer a friend?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                We have a referral bonus. For every successful referral, you and your referee may redeem 10% your next visit.  Terms and conditions apply. 
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title">Can I find out more about ongoing promtions?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Follow our instagram @Beyoutiful for ongoing promotions. 
+              </p>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+
+
+
+    <!--Face Treatments-->
+    <div class="container">
+        <h2>Face Treatments</h2>
+        <div class="accordion">
+
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">Is there any downtime after treatment?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Every treatment has varying downtime. Please consult our doctor(s) to learn more about the downtime of specific treatments.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title">Are there products sold by Beyoutiful that serves as after-care for your treatments?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Do consult our doctors for more information on the after-care products that are suitable. 
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title">Is this safe?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                We are accredited internationally, with top-notch doctors from reputable medical institutions. Our treatments have been certified by the Singapore Medical Council (SMC). 
+              </p>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+
+
+    <!--Body Treatments-->
+    <div class="container">
+        <h2>Body Treatments</h2>
+        <div class="accordion">
+
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">Are there any side effects for the treatment?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Our treatments are minimally or non-invasive. Therefore, there are no major side effects for treatments. Minor side effects will be mentioned by our doctors before the start of your treatment.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title">Will there be any scars?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                  Our practitioners are delicate and priortise the importance of minimising the occurence of scars. 
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title">How much improvement can I expect after treatment?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Our clients can expect an average improvement of 50-70%. It differs for the respective treatments. 
+              </p>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+
+
+    <!--Products-->
+    <div class="container">
+        <h2>Face Products</h2>
+        <div class="accordion">
+
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">How often should I use the products?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                We recommend daily usage for best results. 
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title">Is there an expiry date?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Our products have a shelf life of 2 years. You may also refer to the expiry date printed on the product for clearer and exact reference.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title">Is it suitable for sensitive skin?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Our products are dermatologically certified. 
+              </p>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+    <footer>
+      <div id="usefullinks">
+          <h5>Useful Links</h5>
+          <a href="pdpa.html">Privacy Policy</a>
+          <a href="">Terms of Use</a>
+          <a href="">Return and Refunds</a>
+          <a href="">Track Your Order</a>
+          <br>
+          <button class="button1" onclick="location.href='contactus.html'">BOOK AN APPOINTMENT</button>
+      </div>
+      <div id="footermenu">
+          <h5>Menu</h5>
+          <a href="home.html">Home</a>
+          <a href="aboutbrand.html">About</a>
+          <a href="treatment.html">Treatment</a>
+          <a href="shop.html">Shop</a>
+          <a href="membership.html">Membership</a>
+          <a href="faq.html">FAQ</a>
+          <a href="blog.html">Blog</a>
+          <a href="contactus.html">Contact Us</a>
+      </div>
+      <div id="footerservices">
+          <h5>Services</h5>
+          <a href="treatment.html#facesection">Face</a>
+          <a href="treatment.html#bodysection">Body</a>
+      </div>
+      <div id="footernews">
+          <h5>Newletter Sign Up</h5>
+          <p>Sign up for news and special offers</p>
+          <form>
+              <input type="text" placeholder="Enter Email Address">
+              <button type="submit" class="button1">SUBSCRIBE</button>
+          </form>
+      </div>
+      <div id="footerconnect">
+          <h5>Stay Connected</h5>
+      </div>
+      <div id="connecticons">
+          <img src="assets/facebook.png" alt="">
+          <img src="assets/whatsapp.png" alt="">
+          <img src="assets/dribbble.png" alt="">
+          <img src="assets/snapchat.png" alt="">
+          <img src="assets/tiktok.png" alt="">
+          <img src="assets/twitter.png" alt="">
+          <img src="assets/linkedin.png" alt="">
+          <img src="assets/instagram.png" alt="">
+      </div>
+      <p style="font-size: x-small;">Copyright &copy; 2022 BeYoutiful Pte. Ltd. All Rights Reserved.</p>
+  </footer>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
+
+     
